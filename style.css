@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: url("TTLakes/TT\ Lakes\ Neue\ Trial\ Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+
+.container {
+    padding: 0 16px;
+}
+
+body, h1, h2, h3, h4, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #7E7E82;
+    font-family: "TT Lakes", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #7E7E82;
+}
+
+h1, h2, h3, h4 {
+    color: #1B1C21;
+}
+
+.button--hiden {
+    display: none;
+}
+
+.nav__item--hiden {
+    display: none;
+}
+
+.button__text--hiden {
+    display: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background-color: white;   
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #f7f7f5;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.button__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.header__button {
+    margin-right: 16px;
+}
+
+.button__image--border {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+}
+
+.button:last-child {
+    margin-right: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    
+}
+
+.header--underline {
+    border: 1px #B8FFEC;
+    border-style: none none solid none;
+    cursor: pointer;
+}
+
+.header-start {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.header-end {
+    border: 2px #EAEAEA;
+    padding-left: 20px;
+    border-style: none none none solid;
+    display: flex;
+    align-items: center;
+}
+
+.header-end__bar-separator--hiden {
+    display: none;
+}
+
+.body__title-section {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.body__title {
+    font-size: 28px;
+    
+}
+
+.body__title-decoration {
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 0% 100% 100% 0%;
+}
+
+.nav {
+    margin-top: 24px;
+}
+
+.nav__list {
+    list-style-type: none;
+    overflow: hidden; 
+    display: flex;
+   
+}
+
+.nav__item {
+    padding: 8px 20px;
+    color: #7E7E82;
+    font-size: 16px;
+    white-space: nowrap
+}
+
+.nav__item:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 5px;
+}
+
+.about {
+    margin: 24px 0 35px 0;
+}
+
+
+.about__button {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.about-button__image {
+    margin-right: 8px;
+}
+
+.about-button__text {
+    font-size: 16px;
+}
+
+.about__image {
+    width: 100%;
+}
+
+.about__text {
+    overflow: hidden; 
+    display: block;
+    max-height: 90px;
+    
+}
+
+.slider-items {
+    overflow-x: scroll;
+    cursor: pointer;
+    user-select: none;
+    scrollbar-width: none;
+}
+.slider-items::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+/*SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA*/
+
+@media screen and (min-width: 768px) {
+
+    .about {
+        display: flex;
+        margin: 32px 0 40px 0;
+    }
+
+    .about__image {
+        width: 50vw;
+        margin-right: 25px;
+    }
+
+    .about__text {
+        max-height: 160px;  
+        max-width: 50vw; 
+    }
+
+    .header-end {
+        border-style: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1119.9px) {
+
+    .container {
+        padding: 0 24px;
+    }
+
+    .button--hiden {
+        display: inline-block;
+
+    }
+
+    .header-end {
+        border-style: none;
+    }
+
+    .header-end__bar-separator--hiden {
+        display: inline-block;
+        background-color: #EAEAEA;
+        width: 2px;
+        height: 32px;
+        margin: 0 20px 0 4px;
+    
+    }
+
+    
+
+}
+
+
+@media screen and (min-width: 1120px) {
+
+    .container {
+        padding: 0 32px;
+    }
+
+    .header__button-menu--hiden {
+        display: none;
+    }
+
+    .header-end__bar-separator--hiden {
+        display: none;
+    }
+
+    .header--underline {
+        border-style: none;
+    }
+
+    .nav__item--hiden {
+        display: inline-block;
+    }
+
+    .header__button--high-resol {
+        display: flex;
+        align-items: center;
+        margin-left: 32px;
+    }
+
+    .logo {
+        display: none;
+    }
+    
+
+    .button__text--hiden {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    .body__title-section {
+        margin-top: -58px;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
