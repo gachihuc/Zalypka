@@ -33,9 +33,7 @@ h1, h2, h3, h4 {
     display: none;
 }
 
-.nav__item--hiden {
-    display: none;
-}
+
 
 .button__text--hiden {
     display: none;
@@ -79,11 +77,16 @@ button:hover {
 }
 
 .header {
+    border: 1px #B8FFEC;
+    border-style: none none solid none;
+    cursor: pointer;
+}
+
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 0;
-    
+    padding: 24px 16px; 
 }
 
 .header--underline {
@@ -133,6 +136,14 @@ button:hover {
     margin-top: 24px;
 }
 
+.nav__item {
+    border: 2px solid rgba(1488, 1488, 1488, 0);
+}
+
+.nav__item--hiden {
+    display: none;
+}
+
 .nav__list {
     list-style-type: none;
     overflow: hidden; 
@@ -148,6 +159,11 @@ button:hover {
 }
 
 .nav__item:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 5px;
+}
+
+.nav__item:nth-child(2) {
     border: 2px solid #B8FFEC;
     border-radius: 5px;
 }
@@ -182,25 +198,42 @@ button:hover {
     
 }
 
-.slider-items {
-    overflow-x: scroll;
-    cursor: pointer;
-    user-select: none;
-    scrollbar-width: none;
+
+
+
+
+.button-pseudo {
+    background-color: #FF3E79;
+    content: url(button__image/icon.svg);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 0 solid rgba(1488, 1488, 1488, 0);
 }
-.slider-items::-webkit-scrollbar {
-    display: none;
+
+.button-pseudo::before {
+    content: url(button__image/icon.svg);
 }
 
-
-
-
+.button-pseudo:hover {
+    background-color: #e62560;
+    border-radius: 50%;
+}
 
 
 
 /*SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA*/
 
 @media screen and (min-width: 768px) {
+
+    .container {
+        padding: 16px 24px;
+    }
+
+
+    .header {
+        border-style: none;
+    }
 
     .about {
         display: flex;
@@ -221,21 +254,6 @@ button:hover {
         border-style: none;
     }
 
-
-}
-
-
-
-
-
-
-
-@media screen and (min-width: 768px) and (max-width: 1119.9px) {
-
-    .container {
-        padding: 0 24px;
-    }
-
     .button--hiden {
         display: inline-block;
 
@@ -254,15 +272,27 @@ button:hover {
     
     }
 
-    
 
 }
 
-
 @media screen and (min-width: 1120px) {
 
+    .nav__item:first-child {
+        border: 2px solid #B8FFEC;
+        border-radius: 5px;
+    }
+
+    .nav__item:nth-child(2):not(:hover) {
+        border-color: rgba(1488, 1488, 1488, 0);
+    }
+
+    .button--hiden {
+        display: none;
+
+    }
+
     .container {
-        padding: 0 32px;
+        padding: 16px 24px;
     }
 
     .header__button-menu--hiden {
@@ -271,10 +301,6 @@ button:hover {
 
     .header-end__bar-separator--hiden {
         display: none;
-    }
-
-    .header--underline {
-        border-style: none;
     }
 
     .nav__item--hiden {
@@ -298,7 +324,7 @@ button:hover {
     }
 
     .body__title-section {
-        margin-top: -58px;
+        margin-top: -73px;
     }
 
     .nav__list {
@@ -306,4 +332,12 @@ button:hover {
         flex-wrap: wrap;
     }
 
+}
+
+
+@media screen and (min-width: 1500px) {
+
+    .container {
+        padding: 16px 80px;
+    }
 }
