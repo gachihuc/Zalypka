@@ -175,7 +175,7 @@ button:hover {
 }
 
 .about-button__icon::before {
-  content: url(button__image/icon.svg);
+  content: url(button__image/icon__main.svg);
 }
 
 .about__image {
