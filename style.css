@@ -1,343 +1,369 @@
 @font-face {
-    font-family: "TT Lakes";
-    src: url("TTLakes/TT\ Lakes\ Neue\ Trial\ Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal;
+  font-family: "TT Lakes";
+  src: url("TTLakes/TT\ Lakes\ Neue\ Trial\ Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
-
 
 .container {
-    padding: 0 16px;
+  padding: 0 16px;
 }
 
-body, h1, h2, h3, h4, ul, li {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    color: #7E7E82;
-    font-family: "TT Lakes", sans-serif;
+  color: #7e7e82;
+  font-family: "TT Lakes", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #7E7E82;
+  text-decoration: none;
+  color: #7e7e82;
 }
 
-h1, h2, h3, h4 {
-    color: #1B1C21;
+h1,
+h2,
+h3,
+h4 {
+  color: #1b1c21;
 }
 
 .button--hiden {
-    display: none;
+  display: none;
 }
 
-
+.header__button--high-resol {
+  display: none;
+}
 
 .button__text--hiden {
-    display: none;
-    font-size: 16px;
+  display: none;
+  font-size: 16px;
 }
 
 button {
-    padding: 0;
-    border: 0;
-    background-color: white;   
-    transition-duration: 0.4s;
+  padding: 0;
+  border: 0;
+  background-color: white;
+  transition-duration: 0.4s;
 }
 
 button:hover {
-    background-color: #f7f7f5;
-    border-radius: 15px;
-    cursor: pointer;
-
-}
-
-.button__image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
+  opacity: 0.5;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .header__button {
-    margin-right: 16px;
-}
-
-.button__image--border {
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #FF3E79;
+  margin-right: 16px;
 }
 
 .button:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .header {
-    border: 1px #B8FFEC;
-    border-style: none none solid none;
-    cursor: pointer;
+  border: 1px #b8ffec;
+  border-style: none none solid none;
+  cursor: pointer;
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 16px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px;
 }
 
 .header--underline {
-    border: 1px #B8FFEC;
-    border-style: none none solid none;
-    cursor: pointer;
+  border: 1px #b8ffec;
+  border-style: none none solid none;
+  cursor: pointer;
 }
 
 .header-start {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-
-
 .header-end {
-    border: 2px #EAEAEA;
-    padding-left: 20px;
-    border-style: none none none solid;
-    display: flex;
-    align-items: center;
+  border: 2px #eaeaea;
+  padding-left: 20px;
+  border-style: none none none solid;
+  display: flex;
+  align-items: center;
 }
 
 .header-end__bar-separator--hiden {
-    display: none;
+  display: none;
 }
 
 .body__title-section {
-    display: flex;
-    align-items: center;
-    margin-top: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
 }
 
 .body__title {
-    font-size: 28px;
-    
+  font-size: 28px;
 }
 
 .body__title-decoration {
-    width: 4px;
-    height: 40px;
-    background-color: #41F6D7;
-    border-radius: 0% 100% 100% 0%;
+  width: 4px;
+  height: 40px;
+  background-color: #41f6d7;
+  border-radius: 0% 100% 100% 0%;
 }
 
 .nav {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .nav__item {
-    border: 2px solid rgba(1488, 1488, 1488, 0);
+  border: 2px solid rgba(1488, 1488, 1488, 0);
 }
 
 .nav__item--hiden {
-    display: none;
+  display: none;
 }
 
 .nav__list {
-    list-style-type: none;
-    overflow: hidden; 
-    display: flex;
-   
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
 }
 
 .nav__item {
-    padding: 8px 20px;
-    color: #7E7E82;
-    font-size: 16px;
-    white-space: nowrap
+  padding: 8px 20px;
+  color: #7e7e82;
+  font-size: 16px;
+  white-space: nowrap;
 }
 
 .nav__item:hover {
-    border: 2px solid #B8FFEC;
-    border-radius: 5px;
+  border: 2px solid #b8ffec;
+  border-radius: 5px;
 }
 
 .nav__item:nth-child(2) {
-    border: 2px solid #B8FFEC;
-    border-radius: 5px;
+  border: 2px solid #b8ffec;
+  border-radius: 5px;
 }
 
 .about {
-    margin: 24px 0 35px 0;
+  margin: 24px 0 35px 0;
 }
-
 
 .about__button {
-    display: flex;
-    align-items: center;
-    margin: 16px 0;
-}
-
-.about-button__image {
-    margin-right: 8px;
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
 }
 
 .about-button__text {
-    font-size: 16px;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.about-button__icon::before {
+  content: url(button__image/icon.svg);
 }
 
 .about__image {
-    width: 100%;
+  width: 100%;
 }
 
 .about__text {
-    overflow: hidden; 
-    display: block;
-    max-height: 90px;
-    
+  overflow: hidden;
+  display: block;
+  max-height: 90px;
 }
 
+.header__button {
+  background-color: #ff3e79;
 
-
-
-
-.button-pseudo {
-    background-color: #FF3E79;
-    content: url(button__image/icon.svg);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 0 solid rgba(1488, 1488, 1488, 0);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 0 solid rgba(1488, 1488, 1488, 0);
 }
 
-.button-pseudo::before {
-    content: url(button__image/icon.svg);
+.header__button:hover {
+  background-color: #e62560;
+  border-radius: 50%;
 }
 
-.button-pseudo:hover {
-    background-color: #e62560;
-    border-radius: 50%;
+.header__button-menu::before {
+  content: url(button__image/menu.svg);
 }
 
+.header__button-contacts::before {
+  content: url(button__image/contacts.svg);
+}
 
+.header__button-support::before {
+  content: url(button__image/support.svg);
+}
+
+.header__button-profile::before {
+  content: url(button__image/profile.svg);
+}
+
+.header__button-request::before {
+  content: url(button__image/request.svg);
+}
+
+.header__button-status::before {
+  content: url(button__image/status.svg);
+}
 
 /*SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA  SATANA*/
 
 @media screen and (min-width: 768px) {
+  .container {
+    padding: 16px 24px;
+  }
 
-    .container {
-        padding: 16px 24px;
-    }
+  .header {
+    border-style: none;
+  }
 
+  .about {
+    display: flex;
+    margin: 32px 0 40px 0;
+  }
 
-    .header {
-        border-style: none;
-    }
+  .about__image {
+    width: 50vw;
+    margin-right: 25px;
+  }
 
-    .about {
-        display: flex;
-        margin: 32px 0 40px 0;
-    }
+  .about__text {
+    max-height: 160px;
+    max-width: 50vw;
+  }
 
-    .about__image {
-        width: 50vw;
-        margin-right: 25px;
-    }
+  .header-end {
+    border-style: none;
+  }
 
-    .about__text {
-        max-height: 160px;  
-        max-width: 50vw; 
-    }
+  .button--hiden {
+    display: inline-block;
+  }
 
-    .header-end {
-        border-style: none;
-    }
+  .header-end {
+    border-style: none;
+  }
 
-    .button--hiden {
-        display: inline-block;
-
-    }
-
-    .header-end {
-        border-style: none;
-    }
-
-    .header-end__bar-separator--hiden {
-        display: inline-block;
-        background-color: #EAEAEA;
-        width: 2px;
-        height: 32px;
-        margin: 0 20px 0 4px;
-    
-    }
-
-
+  .header-end__bar-separator--hiden {
+    display: inline-block;
+    background-color: #eaeaea;
+    width: 2px;
+    height: 32px;
+    margin: 0 20px 0 4px;
+  }
 }
 
 @media screen and (min-width: 1120px) {
+  .nav__item:first-child {
+    border: 2px solid #b8ffec;
+    border-radius: 5px;
+  }
 
-    .nav__item:first-child {
-        border: 2px solid #B8FFEC;
-        border-radius: 5px;
-    }
+  .nav__item:nth-child(2):not(:hover) {
+    border-color: rgba(1488, 1488, 1488, 0);
+  }
 
-    .nav__item:nth-child(2):not(:hover) {
-        border-color: rgba(1488, 1488, 1488, 0);
-    }
+  .button--hiden {
+    display: none;
+  }
 
-    .button--hiden {
-        display: none;
+  .container {
+    padding: 16px 24px;
+  }
 
-    }
+  .header__button-menu--hiden {
+    display: none;
+  }
 
-    .container {
-        padding: 16px 24px;
-    }
+  .header-end__bar-separator--hiden {
+    display: none;
+  }
 
-    .header__button-menu--hiden {
-        display: none;
-    }
+  .nav__item--hiden {
+    display: inline-block;
+  }
 
-    .header-end__bar-separator--hiden {
-        display: none;
-    }
+  .header__button {
+    display: none;
+  }
 
-    .nav__item--hiden {
-        display: inline-block;
-    }
+  .header__button--high-resol {
+    display: flex;
+    align-items: center;
+  }
 
-    .header__button--high-resol {
-        display: flex;
-        align-items: center;
-        margin-left: 32px;
-    }
+  .header__button--high-resol:hover {
+    opacity: 0.5;
+    transition-duration: 0.4s;
+  }
 
-    .logo {
-        display: none;
-    }
-    
+  .header__icon--high-resol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff3e79;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 0 solid rgba(1488, 1488, 1488, 0);
+  }
 
-    .button__text--hiden {
-        display: inline-block;
-        margin-right: 8px;
-    }
+  .header__icon-reques--high-resol {
+    margin-right: 32px;
+  }
 
-    .body__title-section {
-        margin-top: -73px;
-    }
+  .header__icon-reques--high-resol::before {
+    content: url(button__image/request.svg);
+  }
 
-    .nav__list {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .header__icon-status--high-resol::before {
+    content: url(button__image/status.svg);
+  }
 
+  .button__text--hiden {
+    display: block;
+    margin-right: 8px;
+    color: #1b1c21;
+  }
+
+  .logo {
+    display: none;
+  }
+
+
+
+  .body__title-section {
+    margin-top: -73px;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-
 @media screen and (min-width: 1500px) {
-
-    .container {
-        padding: 16px 80px;
-    }
+   .container {
+    padding: 16px 80px;
+  }
 }
